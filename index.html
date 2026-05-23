@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Juan Diego Ballesteros Castro</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:40px;
+        }
+
+        .container{
+            width:1000px;
+            background:white;
+            border-radius:25px;
+            overflow:hidden;
+            display:grid;
+            grid-template-columns:340px 1fr;
+            box-shadow:0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        /* IZQUIERDA */
+
+        .left{
+            background:#111827;
+            color:white;
+            padding:40px 30px;
+            text-align:center;
+        }
+
+        .left img{
+            width:180px;
+            height:180px;
+            object-fit:cover;
+            border-radius:20px;
+            border:5px solid #06b6d4;
+            margin-bottom:25px;
+        }
+
+        .left h1{
+            font-size:28px;
+            margin-bottom:10px;
+        }
+
+        .career{
+            color:#06b6d4;
+            margin-bottom:35px;
+            font-size:18px;
+        }
+
+        .section{
+            text-align:left;
+            margin-top:35px;
+        }
+
+        .section h2{
+            color:#06b6d4;
+            margin-bottom:15px;
+            border-bottom:2px solid #06b6d4;
+            padding-bottom:5px;
+        }
+
+        .section p{
+            color:#d1d5db;
+            line-height:1.8;
+            margin-bottom:10px;
+        }
+
+        .skill{
+            margin-bottom:18px;
+        }
+
+        .skill span{
+            display:block;
+            margin-bottom:6px;
+        }
+
+        .bar{
+            width:100%;
+            height:10px;
+            background:#374151;
+            border-radius:10px;
+            overflow:hidden;
+        }
+
+        .fill{
+            height:100%;
+            background:#06b6d4;
+        }
+
+        /* DERECHA */
+
+        .right{
+            padding:50px;
+            background:#f8fafc;
+        }
+
+        .title{
+            font-size:42px;
+            color:#0f172a;
+            margin-bottom:10px;
+        }
+
+        .subtitle{
+            color:#06b6d4;
+            font-size:20px;
+            margin-bottom:35px;
+        }
+
+        .card{
+            margin-bottom:35px;
+        }
+
+        .card h2{
+            color:#0f172a;
+            margin-bottom:15px;
+            position:relative;
+            font-size:28px;
+        }
+
+        .card h2::after{
+            content:"";
+            width:60px;
+            height:4px;
+            background:#06b6d4;
+            position:absolute;
+            left:0;
+            bottom:-8px;
+            border-radius:5px;
+        }
+
+        .card p{
+            margin-top:20px;
+            line-height:1.9;
+            color:#334155;
+            text-align:justify;
+        }
+
+        ul{
+            margin-top:20px;
+            margin-left:20px;
+            color:#334155;
+            line-height:2;
+        }
+
+        @media(max-width:900px){
+
+            .container{
+                grid-template-columns:1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- IZQUIERDA -->
+
+        <div class="left">
+
+            <!-- CAMBIA EL NOMBRE DE LA FOTO -->
+            <img src="perfil.jpg" alt="Foto Perfil">
+
+            <h1>Juan Diego Ballesteros Castro</h1>
+
+            <p class="career">
+                Estudiante de Ingeniería de Sistemas
+            </p>
+
+            <div class="section">
+
+                <h2>Contacto</h2>
+
+                <p>
+                    <strong>Correo:</strong><br>
+                    jdballesterosc@ufpso.edu.co
+                </p>
+
+                <p>
+                    <strong>Universidad:</strong><br>
+                    Universidad Francisco de Paula Santander Ocaña
+                </p>
+
+                <p>
+                    <strong>Semestre:</strong><br>
+                    Segundo semestre
+                </p>
+
+                <p>
+                    <strong>Código:</strong><br>
+                    0192743
+                </p>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Habilidades</h2>
+
+                <div class="skill">
+                    <span>HTML y CSS</span>
+                    <div class="bar">
+                        <div class="fill" style="width:80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>GitHub</span>
+                    <div class="bar">
+                        <div class="fill" style="width:70%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Trabajo en equipo</span>
+                    <div class="bar">
+                        <div class="fill" style="width:90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Resolución de problemas</span>
+                    <div class="bar">
+                        <div class="fill" style="width:85%;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Hobbies</h2>
+
+                <p>
+                    • Programación y tecnología<br>
+                    • Videojuegos<br>
+                    • Música<br>
+                    • Desarrollo web<br>
+                    • Aprender nuevas herramientas digitales
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- DERECHA -->
+
+        <div class="right">
+
+            <h1 class="title">
+                Currículum Vitae
+            </h1>
+
+            <p class="subtitle">
+                Ingeniería de Sistemas - UFPS Ocaña
+            </p>
+
+            <div class="card">
+
+                <h2>Sobre mí</h2>
+
+                <p>
+                    Soy estudiante de Ingeniería de Sistemas con interés
+                    en el desarrollo de software, diseño web y nuevas tecnologías.
+                    Me considero una persona responsable, creativa y comprometida
+                    con mi formación académica. Disfruto aprender constantemente
+                    y participar en proyectos que me permitan fortalecer mis
+                    habilidades tecnológicas y personales.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Objetivos</h2>
+
+                <p>
+                    Mi objetivo principal es convertirme en un profesional
+                    destacado en el área de la tecnología, adquiriendo experiencia
+                    en desarrollo web, programación y soluciones digitales innovadoras.
+                    Busco seguir fortaleciendo mis conocimientos y capacidades
+                    para enfrentar retos del entorno tecnológico actual.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Formación Académica</h2>
+
+                <ul>
+
+                    <li>
+                        Ingeniería de Sistemas
+                    </li>
+
+                    <li>
+                        Universidad Francisco de Paula Santander Ocaña
+                    </li>
+
+                    <li>
+                        Actualmente cursando segundo semestre
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Perfil Profesional</h2>
+
+                <p>
+                    Interesado en áreas como desarrollo frontend,
+                    programación orientada a objetos, diseño de interfaces,
+                    herramientas colaborativas como GitHub y tecnologías modernas.
+                    Me caracterizo por tener disposición para aprender,
+                    trabajar en equipo y desarrollar soluciones eficientes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
